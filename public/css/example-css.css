@@ -1,0 +1,33 @@
+body {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    color: #444444;
+    background: #F8F8F8;
+}
+
+.main-info {
+    padding: 40px;
+}
+
+.bottom-navigation {
+    margin-top: calc(80vh - 200px);
+}
+
+.bottom-navigation > .divider {
+    color: #484844;
+    margin: 20px;
+}
+
+.code {
+    background: #E8E8E8;
+    font-style: italic;
+    padding: 2px 5px;
+    border: 2px #E8E8E8 solid;
+    border-radius: 3px;
+    color: indianred;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
