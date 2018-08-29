@@ -179,7 +179,7 @@ a {
     margin-left: 10vw;
 }
 
-.main-nav-links a {
+.main-nav-link a {
     font-family: 'Roboto Condensed', sans-serif;
     color: #FFFFFF;
     text-decoration: none;
@@ -191,6 +191,15 @@ a {
 
 .main-nav-link a:hover {
     color: aqua;
+}
+
+.main-nav-link-new {
+    background-color: #444444;
+    font-size: 12px;
+    padding: 3px 6px;
+    vertical-align: baseline;
+    text-transform: uppercase;
+    transform: skew(3deg, 0);
 }
 
 /* endregion */
@@ -241,29 +250,84 @@ a {
 }
 
 /* endregion */
-/* region MEDIA */
-.main-media {
+/* region REGISTER */
+.main-register {
     transform: skew(0, 3deg);
     background: #364E8A;
     z-index: 2;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.main-media-container {
+.main-register-container {
     margin: -120px auto;
-    max-width: 1200px;
+    max-width: 900px;
     padding-top: 80px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
-    /*align-items: center;*/
-    height: 70vh;
+    height: 120vh;
     transform: skew(0, -3deg);
+
+}
+
+.main-register-container h2 {
+    font-family: "Permanent Marker", cursive;
+    font-size: 44px;
+    text-align: center;
+    display: block;
+}
+
+.main-register-container p {
+    text-align: justify;
+}
+
+.main-register-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-register-form h3 {
+    font-size: 26px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: normal;
+    padding-top: 20px;
+}
+
+.main-register-form-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-register-form-element {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 5px;
+    margin: 0 5px;
+}
+
+.main-register-form-element label {
+    padding: 5px;
+}
+
+.main-register-form-element input {
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    color: #292929;
+    text-align: center;
+    width: 200px;
 }
 
 /* endregion */
-/* region REGISTER */
-.main-register {
+/* region MEDIA */
+.main-media {
     background: url("../img/main/team-blue.jpg");
     -webkit-background-size: cover;
     background-attachment: fixed;
@@ -272,12 +336,12 @@ a {
     margin-bottom: 60px;
 }
 
-.main-register-container {
+.main-media-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 80px;
+    padding-top: 200px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
     height: 100vh;
