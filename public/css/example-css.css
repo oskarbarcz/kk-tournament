@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto+Condensed');
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Helvetica, sans-serif;
     text-align: center;
@@ -5,29 +15,59 @@ body {
     background: #F8F8F8;
 }
 
-.main-info {
-    padding: 40px;
+.main-header {
+    height: 90vh;
+    background: url("../img/main/heading-bgr2.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
 }
 
-.bottom-navigation {
-    margin-top: calc(80vh - 200px);
-}
-
-.bottom-navigation > .divider {
-    color: #484844;
-    margin: 20px;
-}
-
-.code {
-    background: #E8E8E8;
-    font-style: italic;
-    padding: 2px 5px;
-    border: 2px #E8E8E8 solid;
-    border-radius: 3px;
-    color: indianred;
-    -moz-user-select: none;
+.main-header h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 100px;
+    color: #FFFFFF;
+    text-shadow: 3px 3px 3px #44444499;
     -webkit-user-select: none;
+    -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-
 }
+
+.main-header p {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #FFFFFF;
+    font-size: 32px;
+}
+
+.main-header-heading h1 {
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms;
+}
+
+.main-header-heading h1:hover {
+    font-size: 120px;
+}
+
+.main-section-heading-bottomlink {
+    position: absolute;
+    bottom: 40px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.main-header-bottomlink:hover {
+    color: #444444;
+}
+
+.main-header-bottomlink span {
+    font-size: 60px;
+}
+
