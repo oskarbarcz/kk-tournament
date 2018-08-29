@@ -53,7 +53,7 @@ return [
             'type' => 'text/css',
             'desc' => 'This stylesheet is for better view of startup page, ',
             'rel'  => 'stylesheet',
-            'link' => '/css/example-css.css',
+            'link' => '/css/style-desktop.css',
         ],
     ],
 

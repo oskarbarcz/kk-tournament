@@ -1,20 +1,109 @@
 {% include "common/header.twig" %}
 
 <div class="main-container">
-    <header class="main-header">
+    <header class="main-header" id="top">
         <div class="main-header-heading">
             <h1>KK-Tournament</h1>
-            <p>TURNIEJ E-SPORTOWY KĘDZIERZYN-KOŹLE</p>
+            <p>Turniej E-Sportowy Kędzierzyn-Koźle</p>
         </div>
 
-        <a class="main-header-bottomlink" href="">
+        <a class="main-header-bottomlink" href="#tournament">
             <p>Przewiń w dół</p>
             <span class="fas fa-chevron-down"></span>
         </a>
-
-
+        <div class="main-header-author">
+            <p>Drużyna FiveBaldPotatoes, KK-Tournament 2018</p>
+            <p>Autor: Rafał Raczkowski</p>
+        </div>
     </header>
 
+    <nav class="main-nav">
+        <a class="main-nav-header" href="#top">
+            <img src="img/main/kkt-logo.png" alt="">
+            <strong>KK-Tournament</strong>
+        </a>
+        <ul class="main-nav-links">
+            <li class="main-nav-link"><a href="#tournament">TURNIEJ</a></li>
+            <li class="main-nav-link"><a href="#media">SPONSORZY</a></li>
+            <li class="main-nav-link"><a href="#register">REJESTRACJA</a></li>
+            <li class="main-nav-link"><a href="#org">ORGANIZATORZY</a></li>
+            <li class="main-nav-link"><a href="#location">MIEJSCE</a></li>
+            <li class="main-nav-link"><a href="#expo">EXPO</a></li>
+            <li class="main-nav-link"><a href="#contact">KONTAKT</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-tournament">
+        <div class="main-tournament-container" id="tournament">
+            <article class="main-tournament-article">
+                <h2>O KK-Tournament</h2>
+                <p>
+                    KK-Tournament to turniej e-sportowy organizowany przez uczniów i nauczycieli z pierwszej szkoły
+                    e-sportowej w Polsce - Zespołu Szkół Technicznych i Ogólnokształcących w Kędzierzynie-Koźlu. W
+                    2017 roku założyliśmy Kędzierzyńskie Stowarzyszenie Cybersportu, i wraz z Klubem Sportowym
+                    "Koziołek" realizujemy turnieje KK-Tournament. Cechuje nas najwyższy poziom obsługi graczy, duże
+                    zaangażowanie lokalnych mediów i przedsiębiorstw oraz duża jak na turniej o tej skali pula nagród.
+                </p>
+                <p>
+                    Zaczynaliśmy pomału, najpierw zorganizowaliśmy turniej dla uczniów szkoły (luty 2016), potem duży
+                    turniej na sali kina "Twierdza" (kwiecień 2017). Naszym debiutem na skalę miasta i regionu był
+                    KK-Tournament 2018, wynajęliśmy wtedy ogromną Halę Sportową "Śródmieście" w Kędzierzynie-Koźlu. 1 i
+                    2 czerwca 2018 były dniami
+                    otwarcia
+                    bram e-sportu w Kędzierzynie - profesjonalny i świetnie zorganizowany turniej chwalili zawodnicy
+                    i media - zarówno lokalnie jak i ogólnopolskie.
+                </p>
+            </article>
+            <iframe class="main-tournament-video"
+                    src="https://www.youtube-nocookie.com/embed/LzqHykflpu0?rel=0&amp;controls=0&amp;showinfo=0"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+            </iframe>
+
+        </div>
+    </section>
+
+    <section class="main-media" id="media">
+        <div class="main-media-container">
+            <article>
+                <h2>Media o nas</h2>
+            </article>
+            <article>
+                PRAWY
+            </article>
+        </div>
+    </section>
+
+    <section class="main-register">
+        <div class="main-register-container" id="register">
+            REJESTRACJA
+        </div>
+    </section>
+
+    <section class="main-org" id="org">
+        <div class="main-org-container">
+            ORG
+        </div>
+    </section>
+
+    <section class="main-location">
+        <div class="main-location-container" id="location">
+            GDZIE HALA
+        </div>
+    </section>
+
+    <section class="main-expo">
+        <div class="main-expo-container" id="expo">
+            EXPO
+        </div>
+    </section>
+
+    <section class="main-contact">
+        <div class="main-contact-container" id="contact">
+            KONTAKT
+        </div>
+    </section>
+
+    <div class="longer"></div>
 </div>
 
 {% include "common/footer.twig" %}
