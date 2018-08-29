@@ -26,7 +26,6 @@ a {
 }
 
 /* endregion */
-
 /* region HEADER */
 .main-header {
     height: calc(100vh - 80px);
@@ -83,7 +82,7 @@ a {
     transition: all 0.3s ease-in-out 0s;
 }
 
-.main-header-heading > p:hover::after {
+.main-header-heading:hover > p::after {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
@@ -265,7 +264,7 @@ a {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    height: 120vh;
+    height: 1200px;
     transform: skew(0, -3deg);
 
 }
@@ -275,6 +274,7 @@ a {
     font-size: 44px;
     text-align: center;
     display: block;
+    padding: 20px;
 }
 
 .main-register-container p {
@@ -293,6 +293,7 @@ a {
     font-family: "Roboto Condensed", sans-serif;
     font-weight: normal;
     padding-top: 20px;
+    padding-bottom: 5px;
 }
 
 .main-register-form-group {
@@ -312,9 +313,11 @@ a {
 
 .main-register-form-element label {
     padding: 5px;
+    font-size: 15px;
 }
 
-.main-register-form-element input {
+.main-register-form-element input,
+.main-register-form-element select {
     font-family: 'Roboto', sans-serif;
     padding: 5px;
     font-size: 18px;
@@ -323,6 +326,129 @@ a {
     color: #292929;
     text-align: center;
     width: 200px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.main-register-form-element input:hover,
+.main-register-form-element select:hover {
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.main-register-form-element input:focus,
+.main-register-form-element select:focus {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.main-register-form-element select {
+    padding: 4px;
+}
+
+.main-register-form-legal {
+    width: 500px;
+    margin: 30px auto;
+    text-align: justify;
+}
+
+.main-register-form-legal-container {
+    display: block;
+    text-align: center;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.main-register-form-legal-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.main-register-form-legal-checkmark {
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #EEEEEE;
+}
+
+.main-register-form-legal-container:hover input ~ .main-register-form-legal-checkmark {
+    background-color: #CCCCCC;
+}
+
+.main-register-form-legal-container input:checked ~ .main-register-form-legal-checkmark {
+    background-color: #E1153A;
+}
+
+.main-register-form-legal-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.main-register-form-legal-container input:checked ~ .main-register-form-legal-checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.main-register-form-legal-container .main-register-form-legal-checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.main-register-submit {
+    margin: 30px;
+    padding: 10px;
+}
+
+.main-register-submit input {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 10px;
+    font-size: 24px;
+    background: #E1153A;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    width: 300px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.main-register-submit input:hover,
+.main-register-submit input:focus {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.main-register-submit input[type="reset"] {
+    width: 100px;
 }
 
 /* endregion */

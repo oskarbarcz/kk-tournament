@@ -24,9 +24,9 @@
         </a>
         <ul class="main-nav-links">
             <li class="main-nav-link"><a href="#tournament">TURNIEJ</a></li>
-            <li class="main-nav-link"><a href="#media">SPONSORZY</a></li>
             <li class="main-nav-link"><a href="#register">REJESTRACJA <span
                             class="main-nav-link-new">NOWOŚĆ</span></a></li>
+            <li class="main-nav-link"><a href="#media">SPONSORZY</a></li>
             <li class="main-nav-link"><a href="#org">ORGANIZATORZY</a></li>
             <li class="main-nav-link"><a href="#location">MIEJSCE</a></li>
             <li class="main-nav-link"><a href="#expo">EXPO</a></li>
@@ -91,34 +91,34 @@
                         <input type="text" placeholder="od 3 do 32 znaków">
                     </div>
                 </div>
-                <h3>Dane kapitana</h3>
+                <h3>Pochodzenie drużyny</h3>
                 <div class="main-register-form-group">
                     <div class="main-register-form-element">
-                        <label for="">Nazwa drużyny</label>
-                        <input type="text" placeholder="od 3 do 32 znaków">
+                        <label for="">Miejscowość</label>
+                        <input type="text">
                     </div>
                     <div class="main-register-form-element">
-                        <label for="">Kapitan drużyny</label>
-                        <input type="text" placeholder="Imię 'nick' Nazwisko">
-                    </div>
-                    <div class="main-register-form-element">
-                        <label for="">Telefon kontaktowy</label>
-                        <input type="text" placeholder="od 3 do 32 znaków">
-                    </div>
-                    <div class="main-register-form-element">
-                        <label for="">Adres e-mail</label>
-                        <input type="text" placeholder="od 3 do 32 znaków">
-                    </div>
-                </div>
-                <h3>Pochodzenie</h3>
-                <div class="main-register-form-group">
-                    <div class="main-register-form-element">
-                        <label for="">Nazwa drużyny</label>
-                        <input type="text" placeholder="Imię 'nick' Nazwisko">
-                    </div>
-                    <div class="main-register-form-element">
-                        <label for="">Nazwa drużyny</label>
-                        <input type="text" placeholder="od 3 do 32 znaków">
+                        <label for="">Województwo</label>
+                        <select name="voivodeship" id="voivodeship">
+                            <option value="" disabled>Wybierz województwo z listy</option>
+                            <option value="D">dolnośląskie</option>
+                            <option value="C">kujawsko-pomorskie</option>
+                            <option value="L">lubelskie</option>
+                            <option value="F">lubuskie</option>
+                            <option value="E">łódzkie</option>
+                            <option value="K">małopolskie</option>
+                            <option value="W">mazowieckie</option>
+                            <option value="O" selected>opolskie</option>
+                            <option value="R">podkarpackie</option>
+                            <option value="B">podlaskie</option>
+                            <option value="G">pomorskie</option>
+                            <option value="S">śląskie</option>
+                            <option value="T">świętokrzyskie</option>
+                            <option value="N">warmińsko-mazurskie</option>
+                            <option value="P">wielkopolskie</option>
+                            <option value="Z">zachodniopomorskie</option>
+
+                        </select>
                     </div>
                 </div>
                 <h3>Twoja drużyna</h3>
@@ -148,43 +148,74 @@
                         <input type="text" placeholder="Imię 'nick' Nazwisko">
                     </div>
                 </div>
+                <div class="main-register-form-legal">
+                    <label class="main-register-form-legal-container">
+                        <p>Oświadczam, że ja i każdy członek mojej drużyny zapoznał się z regulaminem rozgrywek i
+                            zobowiązuje się go przestrzegać.
+                        </p>
+                        <input type="checkbox">
+                        <span class="main-register-form-legal-checkmark"></span>
+                    </label>
+                    <label class="main-register-form-legal-container">
+                        <p>Oświadczam, że ja i każdy członek mojej drużyny w przypadku zakwalifikowania się do etapu
+                            play-off zobowiązuję się przyjechać w dniu finału do Kędzierzyna-Koźla i brać udział w
+                            rozgrywkach play-off.
+                        </p>
+                        <input type="checkbox">
+                        <span class="main-register-form-legal-checkmark"></span>
+                    </label>
+                    <label class="main-register-form-legal-container">
+                        <p title="Podstawa prawna: pkt 32, pkt 42, pkt 43, pkt 171 preambuły, art. 4 pkt 11, art. 5 ust
+                        . 1 lit. b, art. 7 rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE - Dz.U. UE. L. z 2016 r. Nr 119, str. 1 ">
+                            Wyrażam zgodę na przetwarzanie moich danych
+                            osobowych w procesie rejestracji do turnieju e-sportowego KK-Tournament,
+                            ogłoszonego >data< i prowadzonego przez organizację "Kędzierzyńskie Stowarzyszenie
+                            Cybersportu" z siedzibą przy ulicy
+                            Jednocześnie oświadczam, że zostaliśmy poinformowani o przysługującym nam prawie dostępu do
+                            treści moich danych oraz ich poprawiania, wycofania zgody na ich przetwarzanie w każdym
+                            czasie, jak również, że podanie tych danych było dobrowolne, jednakże niezbędne aby móc
+                            zostać zarejestrowanym.
+                        </p>
+                        <input type="checkbox">
+                        <span class="main-register-form-legal-checkmark"></span>
+                    </label>
+                </div>
+                <div class="main-register-submit">
+                    <input type="submit" value="Wyślij zgłoszenie >">
+                    <input type="reset" value="Reset">
+                </div>
             </form>
         </div>
     </section>
 
     <section class="main-media" id="media">
         <div class="main-media-container">
-            <article>
-                <h2>Media o nas</h2>
-            </article>
-            <article>
-                PRAWY
-            </article>
+            <h2>Sponsorzy</h2>
         </div>
     </section>
 
 
     <section class="main-org" id="org">
         <div class="main-org-container">
-            ORG
+            <h2>Organizatorzy</h2>
         </div>
     </section>
 
     <section class="main-location">
         <div class="main-location-container" id="location">
-            GDZIE HALA
+            <h2>Hala</h2>
         </div>
     </section>
 
     <section class="main-expo">
         <div class="main-expo-container" id="expo">
-            EXPO
+            <h2>Expo</h2>
         </div>
     </section>
 
     <section class="main-contact">
         <div class="main-contact-container" id="contact">
-            KONTAKT
+            <h2>Kontakt</h2>
         </div>
     </section>
 
