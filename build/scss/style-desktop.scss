@@ -1,10 +1,8 @@
-@accentFont: ~"'Permanent Marker', 'Helvetica', 'Arial Black', cursive";
-
 /*
 https://color.adobe.com/MLB---CUBS-color-theme-11115957/
  */
 /* region >>IMPORTS */
-@import (css) url("https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto+Condensed|Roboto");
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto+Condensed|Roboto");
 /* endregion */
 /* region >>TAGS */
 * {
@@ -40,10 +38,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
-  -webkit-background-size: cover;
   min-height: 400px;
-
+  position: relative;
   .section-container {
     align-items: center;
     display: flex;
@@ -51,6 +47,8 @@ a {
     flex-wrap: nowrap;
     max-width: 1200px;
   }
+
+  -webkit-background-size: cover;
 }
 
 .section-skewed-desc,
@@ -65,8 +63,8 @@ a {
   justify-content: center;
   min-height: 300px;
   position: relative;
-  -webkit-background-size: cover;
   z-index: 2;
+  -webkit-background-size: cover;
 }
 
 .section-skewed-asc {
@@ -109,22 +107,22 @@ a {
 
 /* region HEADER */
 .main-header {
-  background-image: url("../img/main/heading-bgr.jpg");
+  align-items: center;
   background-attachment: fixed;
+  background-image: url("../../public/img/main/heading-bgr.JPG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   height: calc(100vh - 80px);
+  justify-content: center;
   position: relative;
-  align-items: center;
 }
 
 .main-header h1 {
   color: #FFFFFF;
-  font-family: @accentFont;
+  font-family: 'Permanent Marker', 'Helvetica', 'Arial Black', cursive;
   font-size: 100px;
   text-shadow: 3px 3px 3px #44444499;
   transition: all 500ms ease-in-out;
@@ -289,7 +287,7 @@ a {
 /* endregion */
 /* region TOURNAMENT */
 .main-tournament {
-  background-image: url("../img/main/team-red.jpg");
+  background-image: url("../../public/img/main/team-red.jpg");
   margin-bottom: 60px;
 
   &-container {
@@ -332,13 +330,13 @@ a {
 .main-register {
   background-color: #364E8A;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  z-index: 2;
   margin-top: -200px;
+  z-index: 2;
 }
 
 .main-register-container {
-  padding: 20px auto;
   max-width: 900px;
+  padding: 20px auto;
 
 }
 
@@ -527,7 +525,7 @@ a {
 /* endregion */
 /* region MEDIA */
 .main-media {
-  background-image: url("../img/main/team-blue.jpg");
+  background-image: url("../../public/img/main/team-blue.jpg");
   margin-top: -200px;
   padding: 300px 0;
 
@@ -564,7 +562,7 @@ a {
 /* endregion */
 /* region LOCATION */
 .main-location {
-  background-image: url("../img/main/hall.jpg");
+  background-image: url("../../public/img/main/hall.jpg");
   margin-top: -200px;
   padding: 300px 0 200px;
 }
