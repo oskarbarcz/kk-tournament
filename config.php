@@ -49,11 +49,11 @@ return [
     */
     'stylesheets'      => [
         "Example" => [
-            'name' => 'example stylesheet',
+            'name' => 'Master stylesheet',
             'type' => 'text/css',
             'desc' => 'This stylesheet is for better view of startup page, ',
             'rel'  => 'stylesheet',
-            'link' => '/css/style-desktop.css',
+            'link' => '/css/master.css',
         ],
     ],
 
